@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="static/favicon/logo.ico" type="image/x-icon">
     <!--Tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,339 +11,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="static/css/style.css">
-    <!--Iconos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Pelo y Barba - Peluquería Canina</title>
+    <!-- UTILIZANDO CDN -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <title>Porcentator</title>
+    
 </head>
-<body>
-    <!--Encabezado-->
+
+<!-- Agregamos CCS en linea -->
+<body >
+    <!-- Agregar comentario -->
+    <!-- INDICAR LA CABECERA -->
     <header class="header">
-        <!-- Logo -->
-        <div  id="logo">
-            <img id="img-logo" src="./static/img/logo.png" alt="logo">
-            <a href="index.html"><span>Pelo y Barba</span></a>
-        </div>
-        <!-- Hipervínculos para el menú-->
-        <nav>
-            <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!--Contenido-->
-    <main>
-        <section id="banner">
-            <!-- División contenedora--> 
-            <div id="container">
-                <h1>Pelo y Barba</h1>
-                <h2>Peluquería canina y <br> artículos para tu mascota</h2>
-                <!-- División para información de contacto-->
-                <div id="info">
-                    <p><b>Horario de atención: </b><br> Martes a Sábado de 9 a 17 hs</p><br>
-                    <p><b>Dirección: </b><br>Av. del Libertador 1400 - CABA</p>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+
+
+        <header>
+            <section id="banner">
+                <div id="contenedor-inicial" class="container ">
+                    <h2 class="search-title">Gestión de plancito</h2>
+                    <form action="#"  id="form-plan">
+                        <div class="d-flex">
+                            <div class="form-control d-flex-column">
+                                <label for="title">Título</label>
+                                <input type="text" class="input-search" name="title-plan" id="title-plan">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <label for="porcentaje">Porcentaje</label>
+                                <input type="number" class="input-search" name="porcentaje" id="porcentaje">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" class="input-search" name="fecha" id="fecha">
+                            </div>
+                            <div class="form-control d-flex-column">
+                                <label for="imagen">Imagen</label>
+                                <input type="url" class="input-search" name="imagen" id="imagen">
+                            </div>                
+                            <a href="##" class="button" id="btn-save-plan">Enviar</a>
+                        </div>
+                    </form> 
                 </div>
-            </div>
-        </section>
-        
-        <section id="nosotros"><a name="nosotros"></a>
-            <!-- División contenedora-->
-            <div class="Nosotros">
-                <!-- imagen -->
-                <img src="static/img/corte-pelo.jpg" alt="Estilista peinando perro" class="nosotros-img" height="400"></a>
-                <div class="nosotros-text">
-                    <h2>Nosotros</h2>
-                    <p>Desde 2024 <i>Pelo y Barba</i> brinda la mejor atención estética para tu mascota. Cuenta para ello con los mejores profesionales, quienes continúan en capacitación y formación constante, para brindarles la más cálida atención y lidiar no solo con los perros (que es lo más fácil), sino también con sus dueños. </p>
-                    <button type="button" class="button">Conocenos</button> <!--Redireccionaría a una página distinta-->
+                <h1 id="titulo"></h1>
+                <div>
+                    <form action="#" id="respuesta">
+                        <div class="d-flex">
+                            <div class="form-control d-flex-column">
+                                <label for="porcentaje">Porcentaje</label>
+                                <input type="number" class="input-search" name="porcentaje-rta" id="porcentaje-rta">
+                            </div>
+                            <a href="##" class="button" id="btn-respuesta">Enviar</a>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </section>
-    
-        <section id="servicios"><a name="servicios"></a>
-            <!-- División contenedora-->
-            <div>
-                <div id="texto-servicios">
-                    <h2>Servicios</h2>
-                    <p>La más amplia oferta del barrio</p>
-                </div>
-                <div id="contenido-servicios">
-                    <div id="opciones-servicio">
-                        <ul> 
-                            <li>Baño</li>
-                            <li>Corte</li>
-                            <li>Limpieza de oídos</li>
-                            <li>Desparacitado</li>
-                            <li>Paticure</li>
-                        </ul>
-                        <a href="templates/formulario.html"><button type="button" class="button">Reservar turno</button></a> <!--Redireccionaría a una página distinta, pero seguro haya una funcionalidad del botón que permita hacer esto sin el <a></a> VER -->
-                    </div>
-                    <div class="carrusel">  
-                        <div class="grande">
-                            <img src="./static/img/banio.jpg" alt="Baño">
-                            <img src="./static/img/unias.jpg" alt="Corte">
-                            <img src="./static/img/desparasitar.jpg" alt="Desparacitado">
-                            <img src="./static/img/pexels-mirko-fabian-12612095.jpg" alt="Uñas">
-                        </div>
-                        <!-- es para armar los puntos en el carrusel
-                        <ul class="puntos"> 
-                            <li class="punto" id="punto1"></li>
-                            <li class="punto" id="punto2"></li>
-                            <li class="punto" id="punto3"></li>
-                            <li class="punto" id="punto4"></li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-           
-        <section id="productos"><a name="productos"></a>
-            <!-- División contenedora-->
-            <div>
-                <div id="encabezado-prod-flex">
-                    <h2>Productos</h2>
-                    <p>Nuestros best-sellers del mes</p>
-                </div>
-                <div class="products-flex">
-                    <!-- División para los detalles del producto1: un espacio para la imagen y otro para la tabla con la información-->
-                    <div class="producto-x" id="producto1">
-                        <!-- imagen -->
-                        <div>
-                            <a href="./templates/detalle-producto.html" target="_blank" rel="noopener noreferrer"><img src="static/img/Ejemplo-Alimento.png" alt="Royal-Canin-MiniAdult" class="producto-img"></a>
-                        </div>
-                        <!-- Tabla con información-->
-                        <div class="detalle-producto">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2"><strong>Royal Canin</strong></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2">MINI Adult</th>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tamaño</strong></td>
-                                        <td>7.5 Kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Antes</strong></td>
-                                        <td>$45.250</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Ahora</strong></td>
-                                        <td>$38.462</td>
-                                    </tr>
-                                </tbody>
-                            </table>             
-                        </div>
-                        <!-- <button type="button" class="button">Comprar</button>       -->
-                    </div>
-                    <!-- División para los detalles del producto2: un espacio para la imagen y otro para la tabla con la información-->
-                    <div class="producto-x" id="producto2">
-                        <!-- imagen -->
-                        <div>
-                            <a href="./templates/detalle-producto.html" target="_blank" rel="noopener noreferrer"><img src="static/img/Royal-Puppy.png" alt="Royal-Canin-Puppy" class="producto-img"></a>
-                        </div>
-                        <!-- Tabla con información-->
-                        <div class="detalle-producto">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2"><strong>Royal Canin</strong></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2">MINI Puppy</th>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tamaño</strong></td>
-                                        <td>XX Kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Antes</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Ahora</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                </tbody>
-                            </table>                            
-                        </div>
-                        <!-- <button type="button" class="button">Comprar</button> -->
-                    </div>
-                    <!-- División para los detalles del producto3: un espacio para la imagen y otro para la tabla con la información-->
-                    <div class="producto-x" id="producto3">
-                        <!-- imagen -->
-                        <div>
-                            <a href="./templates/detalle-producto.html" target="_blank" rel="noopener noreferrer"><img src="static/img/Royal-Giant.png" alt="Royal-Canin-Giant" class="producto-img"></a>
-                        </div>
-                        <!-- Tabla con información-->
-                        <div class="detalle-producto">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2"><strong>Royal Canin</strong></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2">GIANT</th>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tamaño</strong></td>
-                                        <td>XX Kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Antes</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Ahora</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                </tbody>
-                            </table>                            
-                        </div>
-                        <!-- <button type="button" class="button">Comprar</button> -->
-                    </div>
-                    <!-- División para los detalles del producto4: un espacio para la imagen y otro para la tabla con la información-->
-                    <div class="producto-x" id="producto4">
-                        <!-- imagen -->
-                        <div>
-                            <a href="./templates/detalle-producto.html" target="_blank" rel="noopener noreferrer"><img src="static/img/Royal-Medium" alt="Royal-Canin-Medim" class="producto-img"></a>
-                        </div>
-                        <!-- Tabla con información-->
-                        <div class="detalle-producto">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2"><strong>Royal Canin</strong></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2">MEDIUM +7</th>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tamaño</strong></td>
-                                        <td>XX Kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Antes</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Ahora</strong></td>
-                                        <td>$X.XXX</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- <button type="button" class="button">Comprar</button>     -->
-                    </div>
-                </div>
-                <div id="boton-productos">
-                    <button type="button" class="button">Conocé todos nuestros productos</button> <!--Redireccionaría a una página distinta con todos los productos-->
-                </div>
-            </div>
-        </section>
-            
-        <section id="testimonios"><a name="testimonios"></a>
-            <!-- División contenedora-->
-            <div class="caja-testimonios">
-                <h2>Testimonios</h2>
-                <p>Lo que nuestros clientes dicen de nosotros:</p>
-                <div class="contenedor-testimonios">
-                    <div class="testimonio">
-                        <img src="./static/img/usuario1.jpg" alt="Usuario 1" class="testimonio-img">
-                        <p>Ana Padilla </p>
-                        <p>2024.04.05</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>He llevado a mi perrito Jamal, es un galgo afgano que tiene mucho trabajo. Laura lo ha dejado precioso, muy buen trabajo.
-                        </p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="./static/img/usuario2.jpg" alt="Usuario 2" class="testimonio-img">
-                        <p>Carmen Gómez</p>
-                        <p>2024.03.30</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>Muy buenos profesionales, les encanta su trabajo. Se nota en el resultado. Y el trato a los animales y a los clientes es fenomenal.</p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="./static/img/usuario3.jpg" alt="Usuario 3" class="testimonio-img">
-                        <p>Silvia Garcia</p>
-                        <p>2024.02.12</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>Grandes profesionales! Dejaron a mi Lupita preciosa. Son muy atentos y amables, se nota que les gusta su trabajo y sobre todo que disfrutan. Los recomiendo 100%</p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="./static/img/usuario4.jpg" alt="Usuario 4" class="testimonio-img">
-                        <p>Manuel Lozano</p>
-                        <p>2024.01.10</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>Nuestra experiencia con Pelo y Barba es muy buena..Llevamos años llevando a Boby nuestro caniche y la verdad es que la profesionalidad, el interés y el trato con los animales es genial!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="contacto"><a name="contacto"></a>
-            <!-- División contenedora-->
-            <div>
-                <h2>Contacto</h2>
-                <p>Todavía tenés dudas? <a href="templates/formulario.html"><button type="button" class="button">Escribinos</button></p></a>
-                <p>O vení a conocernos!</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.058517534007!2d-58.393176!3d-34.5848217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1eb4e7ad1%3A0x8bcb7db37f6f9421!2sPlaza%20Francia!5e0!3m2!1ses-419!2sar!4v1710198299261!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+                <div id="resultado">
+                    <h1 id="resolucion"></h1>
+                </sdiv>
+            </section>
+        </header>
+
+
+
+
+
+
     </main>
-    
-    <!--Pie-->
-    <footer>
-        <div class="container-enlaces-footer">
-            <a href="https://www.google.com/maps?ll=-34.584822,-58.393176&z=14&t=m&hl=es-419&gl=AR&mapclient=embed&cid=10073283201434883105" target="_blank">
-                <div class="emlace-footer">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <p>Dónde estamos</p>
-                        <p>Av. del Libertador 1400</p>
-                        <p>CABA</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                <div class="emlace-footer">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <p>+54911-1234-5678</p>
-                </div>
-            </a>
-            <a href="mailto:peloybarba@mail.com?Subject=Consulta">
-                <div class="emlace-footer">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>peloybarba@mail.com</p>
-                </div>
-            </a>
-            <div class="emlace-footer">
-                <p id="barra-vertical">|</p>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
-        </div>
-        <div class="legales">
-            <p>© 2024 Todos los derechos reservados a Pelo y Barba</p>
-            <p>Política de Privacidad | Términos y Condiciones</p>
-        </div> 
+    <!-- Indicar el pie de página -->
+    <footer id="footer">
     </footer>
+
+    <!-- REFERENCIA EXTERNA -->
+    <script src="./static/js/index.js"></script>
+    <!-- UTILIZANDO CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+
 </body>
+
 </html>
