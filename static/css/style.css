@@ -26,7 +26,10 @@ body{
 h1{
     font-family: Caveat, sans-serif;
     font-size: 50px;
-    color: #fafafa;
+    color: black;
+    background-color: var(--third-bis-color);
+    text-align: center;
+    
 }
 
 h2{
@@ -34,6 +37,7 @@ h2{
     color: #fafafa;
     font-size: 40px;
     padding: 8px;
+    text-align: center;
 }
 
 label{

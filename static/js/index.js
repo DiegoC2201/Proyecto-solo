@@ -39,13 +39,14 @@ function showPlan(){
 
 
 // Selecciono el botón
-const btnRespuesta = document.querySelector('.btn-respuesta');
+const btnRespuesta = document.querySelector('#btn-respuesta');
 
 //Asocio al evento click la función de mostrar el plan
 btnRespuesta.addEventListener('click',calculos);
 
 function calculos(){
         //Obtengo el elemento HTML del formulario
+        const cont_rta = document.querySelector('#contenedor-respuesta')
         const formRta = document.querySelector('#respuesta');
 
         //obtengo los inputs del formulario
@@ -68,6 +69,8 @@ function calculos(){
 
         let resultado = document.querySelector("#resolucion");
         resultado.innerHTML = resolucion;
+
+        cont_rta.classList.add('activo')
 
 }
 
